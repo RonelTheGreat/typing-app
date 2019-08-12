@@ -43,7 +43,7 @@ class App extends Component {
 
     componentDidMount = () => {
         axios
-            .get('http://localhost:5000/api/short/words')
+            .get('https://keyboard-ninjaaa.herokuapp.com/api/short/words')
             .then(res => res.data)
             .then(data => {
                 this.setState(prevState => {
@@ -105,7 +105,11 @@ class App extends Component {
         })
 
         axios
-            .get(`http://localhost:5000/api/${this.state.wordLength}/words`)
+            .get(
+                `https://keyboard-ninjaaa.herokuapp.com/api/${
+                    this.state.wordLength
+                }/words`
+            )
             .then(res => res.data)
             .then(data => {
                 this.setState(prevState => {
