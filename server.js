@@ -33,7 +33,7 @@ app.get('/api/:length/words', (req, res) => {
         }
 
         // generate random number list
-        const randNumList = generateRandNumList(300, setOfWords.length - 1)
+        const randNumList = generateRandNumList(220, setOfWords.length - 1)
 
         // loop through each random number
         // and select random words from the set of words
