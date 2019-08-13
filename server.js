@@ -5,7 +5,6 @@ const express = require('express'),
     fs = require('fs')
 
 app.use(express.static(path.join(__dirname, 'build')))
-app.use(express.static(path.join(__dirname, 'text files')))
 
 app.get('/api/:length/words', (req, res) => {
     const length = req.params.length
