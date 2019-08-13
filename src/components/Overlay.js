@@ -33,21 +33,9 @@ const Overlay = props => {
 
                 {state === 'fetching' && (
                     <div className="loading-cont">
-                        <img
-                            className="first"
-                            src={loading}
-                            alt="loading animation"
-                        />
-                        <img
-                            className="second"
-                            src={loading}
-                            alt="loading animation"
-                        />
-                        <img
-                            className="third"
-                            src={loading}
-                            alt="loading animation"
-                        />
+                        <img className="first" src={loading} alt="*" />
+                        <img className="second" src={loading} alt="*" />
+                        <img className="third" src={loading} alt="*" />
                     </div>
                 )}
             </h2>
